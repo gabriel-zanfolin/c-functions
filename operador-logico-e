@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main (void)
+{
+	float nota_final, frequencia;
+	
+	printf("Digite a nota final do aluno: ");
+	scanf("%f", &nota_final);
+	
+	printf("Digite a frequencia do aluno: ");
+	scanf("%f", &frequencia);
+	
+	if (nota_final > 6.0 && frequencia >= 75) //se (nota_final > 6.0 E frequencia >= 75)
+	{
+		printf("Aluno aprovado \n");
+	}
+	else
+	{
+		printf("Aluno reprovado \n");
+	}
+	system("pause");
+	return (0);
+}
+
+//Para o operador && (E) o resultado sera verdadeiro caso todas as comparacoes sejam verdadeiras.
